@@ -4,8 +4,8 @@ import assets from "../assets/BackgroundImage.jpg";
 import Utility from "../components/Utility.astro";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
-import backgroundImage from "../assets/background.jpg"
-import {Image} from "../assets/background.jpg"
+import backgroundImage from "../assets/background.jpg";
+
 
 ---
 
@@ -13,11 +13,12 @@ import {Image} from "../assets/background.jpg"
   <body>
     <header>
    <Utility />
-    </header>
-
+    
 <nav>
   <Navigation />  
 </nav>
+</header>
+
 <main>
     <h1>mY CONTENT IS HERE</h1>
     
@@ -29,9 +30,20 @@ import {Image} from "../assets/background.jpg"
 
 <style>
   body{
+    margin: 0;
+    padding:0;
     background-image:url(src/assets/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  header {
+    background-color:rgba(0,0,0,0.5);
+    margin-top: -0.9rem;
+    padding: 1rem 2rem;
+  
   }
 </style>
 

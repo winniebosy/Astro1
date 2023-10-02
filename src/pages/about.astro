@@ -2,18 +2,24 @@
 
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
 ---
 
 <Layout title="about">
-<header></header>
+<nav>
+    <Navigation />
+</nav>
 
-<Navigation />
 
+<main>
+    <h1> Introduction to Astro</h1>
+    <h2>.. and my new astro site</h2>
+</main>
 
-<main></main>
-
-<footer></footer>
+<footer>
+</footer>
+</footer>
 
 
 
@@ -21,3 +27,16 @@ import Navigation from "../components/Navigation.astro";
 
 
 </Layout>
+
+<style>
+    body{
+        margin:0;
+        padding:0;
+    }
+
+    nav{
+    background-color:rgba(0,0,0,0.5);
+    margin-top: -0.9rem;
+    padding: 1rem 2rem;
+    }
+</style>
