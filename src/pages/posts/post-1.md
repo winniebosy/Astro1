@@ -1,6 +1,4 @@
 ---
-
-
 title: 'My first blog post'
 pubDate: 2023-10-02
 description: ' This is the first post of my new astro blog'
@@ -29,4 +27,6 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 ## What is next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+
+Back to [main posts page](/blog/)
 
