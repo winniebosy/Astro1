@@ -4,6 +4,14 @@ import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 
+const identity = {
+firstName: "Winnie",
+  country: "Kenya",
+  occupation: "Technical Writer",
+  hobbies: ["photography", "birdwatching", "baseball"],
+}
+
+const skills = ["HTML", "css", "Accessibility", "Astro", "Javascript"]
 ---
 
 <Layout title="about">
@@ -14,8 +22,15 @@ import Footer from "../components/Footer.astro";
 
 <main>
     <h1> Introduction to Astro</h1>
-    <h2>.. and my new astro site</h2>
+    <p>my new astro site. Yay!</p>
     <p> I am testing my journey with Astro </p>
+    <section>
+        <h2>Here are a few facts about me:</h2>
+         <ul>
+            <li>My name is {identity.firstName} </li>
+            <li>I live in {identity.country} and I work as a {identity.occupation}</li>
+         </ul>
+    </section>
 </main>
 
 <footer>
